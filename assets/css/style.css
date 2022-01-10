@@ -98,13 +98,13 @@ body {
 }
 
 /*--------------------------------------------------------------
-# Featured
+# Games
 --------------------------------------------------------------*/
-.featured {
+.Games {
   position: relative;
   z-index: 2;
 }
-.featured .icon-box {
+.Games .icon-box {
   padding: 40px 30px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
@@ -112,17 +112,17 @@ body {
   transition: all ease-in-out 0.3s;
   height: 100%;
 }
-.featured .icon-box i {
+.Games .icon-box i {
   color: #e96b56;
   font-size: 42px;
   margin-bottom: 15px;
   display: block;
   line-height: 0;
 }
-.featured .icon-box:hover {
+.Games .icon-box:hover {
   background: #e96b56;
 }
-.featured .icon-box:hover i, .featured .icon-box:hover h3 a, .featured .icon-box:hover p {
+.Games .icon-box:hover i, .Games .icon-box:hover h3 a, .Games .icon-box:hover p {
   color: #fff;
 }
 
