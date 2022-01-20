@@ -97,6 +97,10 @@ body {
   position: relative;
   z-index: 2;
 }
+.Games .box-img {
+  height: 225px;
+  width: 300px;
+}
 .Games .icon-box {
   padding: 30px 20px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);
