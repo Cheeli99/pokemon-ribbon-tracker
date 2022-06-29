@@ -31,7 +31,7 @@ body {
 }
 
 .cover-container {
-  max-width: 60em;
+  max-width: 80em;
 }
 
 
@@ -96,6 +96,10 @@ body {
 .Games .box-img {
   height: 225px;
   width: 300px;
+}
+.Games .box-img2 {
+  height: 225px;
+  width: 200px;
 }
 .Games .icon-box {
   padding: 30px 20px;
