@@ -49,18 +49,29 @@
           </thead>
           <tbody>
             <tr>
-              <td>1</td>
+              <td>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="tableDefaultCheck1" name="ribbon">
+                  <label class="custom-control-label" for="tableDefaultCheck1">1</label>
+                </div>
+              </td>
               <td>National Ribbon</td>
               <td>Purify the pokemon</td>
             </tr>
             <tr>
-              <td>2</td>
+              <td>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="tableDefaultCheck2" name="ribbon">
+                  <label class="custom-control-label" for="tableDefaultCheck2">2</label>
+                </div>
+              </td>
               <td>Earth Ribbon</td>
               <td>Beat Mt. Battle in one continuous challenge</td>
             </tr>
           </tbody>
         </table>
-
+        <button type="button" value="selectAll" class="button" onclick="checkAll()">Select All</button>
+        <button type="button" value="deselectAll" class="button" onclick="uncheckAll()">Clear</button>
       </div>
     </section>
 
