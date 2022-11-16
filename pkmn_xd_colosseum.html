@@ -17,6 +17,9 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- JQuery file-->
+  <script src="assets/js/jquery-3.6.1.min.js" type="text/javascript"></script>
 </head>
 
 <body class="text-center">
@@ -70,8 +73,9 @@
             </tr>
           </tbody>
         </table>
+        <button type="button" value="save" class="button" onclick="save()">Save</button>
         <button type="button" value="selectAll" class="button" onclick="checkAll()">Select All</button>
-        <button type="button" value="deselectAll" class="button" onclick="uncheckAll()">Clear</button>
+        <button type="button" value="deselectAll" class="button" onclick="clear()">Clear</button>
       </div>
     </section>
 
