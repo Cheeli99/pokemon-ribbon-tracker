@@ -143,8 +143,7 @@
               </tr>
             </tbody>
           </table>
-          <button type="button" value="save" class="button" onclick="save()">Save</button>
-          <button type="button" value="selectAll" class="button" onclick="checkAll()">Select All</button>
+          
           <button type="button" value="delete" class="button" onclick="clearAll()">Clear</button>
       </div>
     </section>
@@ -166,8 +165,38 @@
   <!-- Vendor JS Files -->
 
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <!-- Main JS File 
+  <script src="assets/js/main.js"></script>-->
+
+  <script>
+    $('.custom-control-input').on('click', function() {
+      var fav, favs = [];
+      $('.custom-control-input').each(function() { // run through each of the checkboxes
+        fav = {id: $(this).attr('id'), value: $(this).prop('checked')};
+        favs.push(fav);
+      });
+      localStorage.setItem("ribbonListUSUM", JSON.stringify(favs));
+
+      console.log(favs);
+    });
+
+    // Parses through the created json file and reasigns values to the checkboxes
+    $(document).ready(function() {
+      var list = JSON.parse(localStorage.getItem('ribbonListUSUM'));
+      if (!list.length) {return};
+      console.debug(list);
+
+      for (var i = 0; i < list.length; i++) {
+        console.debug(list[i].value == 'on');
+        $('#' + list[i].id ).prop('checked', list[i].value);
+      }
+    });
+
+    function clearAll() {
+      location.reload();
+      localStorage.removeItem('ribbonListUSUM');
+    }
+  </script>
 
 </div>
 </body>
