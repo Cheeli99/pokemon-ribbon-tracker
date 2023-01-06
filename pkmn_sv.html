@@ -2,7 +2,7 @@
 <html lang="en-US">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="Evan McCarthy aka. Cheeli99">
@@ -34,109 +34,112 @@
       </div>
     </header>
 
-  <main role="main" class="inner cover">
-    <h1 class="cover-heading">Pokemon Scarlet and Violet</h1>
-  
-    <section>
-      <div class="container">
-        <table class="table table-dark table-bordered table-responsive-md">
-          <thead>
-            <tr>
-              <th>Number</th>
-              <th>Ribbon</th>
-              <th>How to get</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" id="tableDefaultCheck89" name="ribbon">
-                  <label class="custom-control-label" for="tableDefaultCheck89">89</label>
-                </div>
-              </td>
-              <td>Paldea Champion Ribbon</td>
-              <td>Become the Paldea Champion and enter the Paldea Hall of Fame</td>
-            </tr>
-            <tr>
-              <td>
-                <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" id="tableDefaultCheck90" name="ribbon">
-                  <label class="custom-control-label" for="tableDefaultCheck90">90</label>
-                </div>
-              </td>
-              <td>Once-in-a-Lifetime Ribbon</td>
-              <td>Obtain on a Pokemon via Surprise Trade (1 in 100 chance)</td>
-            </tr>
-            <tr>
-              <td>
-                <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" id="tableDefaultCheck91" name="ribbon">
-                  <label class="custom-control-label" for="tableDefaultCheck91">91</label>
-                </div>
-              </td>
-              <td>Hisui Ribbon</td>
-              <td>Available only on Pokemon that participated in the Photo Studio in Pokemon Legends Arceus</td>
-            </tr>
-          </tbody>
-        </table>
-        <!-- 
+    <main role="main" class="inner cover">
+      <h1 class="cover-heading">Pokemon Scarlet and Violet</h1>
+
+      <section>
+        <div class="container">
+          <table class="table table-dark table-bordered table-responsive-md">
+            <thead>
+              <tr>
+                <th>Number</th>
+                <th>Ribbon</th>
+                <th>How to get</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="tableDefaultCheck89" name="ribbon">
+                    <label class="custom-control-label" for="tableDefaultCheck89">89</label>
+                  </div>
+                </td>
+                <td>Paldea Champion Ribbon</td>
+                <td>Become the Paldea Champion and enter the Paldea Hall of Fame</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="tableDefaultCheck90" name="ribbon">
+                    <label class="custom-control-label" for="tableDefaultCheck90">90</label>
+                  </div>
+                </td>
+                <td>Once-in-a-Lifetime Ribbon</td>
+                <td>Obtain on a Pokemon via Surprise Trade (1 in 100 chance)</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="tableDefaultCheck91" name="ribbon">
+                    <label class="custom-control-label" for="tableDefaultCheck91">91</label>
+                  </div>
+                </td>
+                <td>Hisui Ribbon</td>
+                <td>Available only on Pokemon that participated in the Photo Studio in Pokemon Legends Arceus</td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- 
         <button type="button" value="save" class="button" onclick="save()">Save</button>
         <button type="button" value="selectAll" class="button" onclick="checkAll()">Select All</button>-->
-        <button type="button" value="delete" class="button" onclick="clearAll()">Clear</button>
-      </div>
-    </section>
+          <button type="button" value="delete" class="button" onclick="clearAll()">Clear</button>
+        </div>
+      </section>
 
-    <p>Big thanks to <a href="https://www.reddit.com/r/pokemonribbons/comments/7j772r/a_quick_list_on_all_ribbons_a_pokemon_can_get/" 
-       target="_blank">u/CaptainTimey</a> on Reddit for the help with the ribbons and their locations!</p>
+      <p>Big thanks to <a
+          href="https://www.reddit.com/r/pokemonribbons/comments/7j772r/a_quick_list_on_all_ribbons_a_pokemon_can_get/"
+          target="_blank">u/CaptainTimey</a> on Reddit for the help with the ribbons and their locations!</p>
 
-  </main><!-- End of main -->
+    </main><!-- End of main -->
 
     <!-- ======= Footer ======= -->
-  <footer class="mastfoot mt-auto">
-    <div class="inner">
-      <p>All content & design © Pokémon Ribbon Tracker, 2022. <a href="privacy.html">Privacy Policy.</a> <a href="credits.html">Credits.</a>
-        Pokémon images & names © 1995-2021 Nintendo/Creatures Inc./GAME FREAK inc. TM
-      </p>
-    </div>
-  </footer>
+    <footer class="mastfoot mt-auto">
+      <div class="inner">
+        <p>All content & design © Pokémon Ribbon Tracker, 2022. <a href="privacy.html">Privacy Policy.</a> <a
+            href="credits.html">Credits.</a>
+          Pokémon images & names © 1995-2021 Nintendo/Creatures Inc./GAME FREAK inc. TM
+        </p>
+      </div>
+    </footer>
 
-  <!-- Vendor JS Files -->
+    <!-- Vendor JS Files -->
 
 
-  <!-- Main JS File 
+    <!-- Main JS File 
   <script src="assets/js/main.js"></script>-->
 
-  <script>
-    $('.custom-control-input').on('click', function() {
-      var fav, favs = [];
-      $('.custom-control-input').each(function() { // run through each of the checkboxes
-        fav = {id: $(this).attr('id'), value: $(this).prop('checked')};
-        favs.push(fav);
+    <script>
+      $('.custom-control-input').on('click', function () {
+        var fav, favs = [];
+        $('.custom-control-input').each(function () { // run through each of the checkboxes
+          fav = { id: $(this).attr('id'), value: $(this).prop('checked') };
+          favs.push(fav);
+        });
+        localStorage.setItem("ribbonListXDC", JSON.stringify(favs));
+
+        console.log(favs);
       });
-      localStorage.setItem("ribbonListXDC", JSON.stringify(favs));
 
-      console.log(favs);
-    });
+      // Parses through the created json file and reasigns values to the checkboxes
+      $(document).ready(function () {
+        var list = JSON.parse(localStorage.getItem('ribbonListXDC'));
+        if (!list.length) { return };
+        console.debug(list);
 
-    // Parses through the created json file and reasigns values to the checkboxes
-    $(document).ready(function() {
-      var list = JSON.parse(localStorage.getItem('ribbonListXDC'));
-      if (!list.length) {return};
-      console.debug(list);
+        for (var i = 0; i < list.length; i++) {
+          console.debug(list[i].value == 'on');
+          $('#' + list[i].id).prop('checked', list[i].value);
+        }
+      });
 
-      for (var i = 0; i < list.length; i++) {
-        console.debug(list[i].value == 'on');
-        $('#' + list[i].id ).prop('checked', list[i].value);
+      function clearAll() {
+        location.reload();
+        localStorage.removeItem('ribbonListXDC');
       }
-    });
+    </script>
 
-    function clearAll() {
-      location.reload();
-      localStorage.removeItem('ribbonListXDC');
-    }
-  </script>
-
-</div>
+  </div>
 </body>
+
 </html>
