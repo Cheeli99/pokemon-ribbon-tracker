@@ -85,14 +85,24 @@ body {
   padding: 3rem 1.5rem;
 }
 .cover-heading {
-  padding-top: 20px;
+  padding-top: 30px;
+}
+.cover-heading-game {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.cover-paragraph {
+  padding: 15px 0px;
 }
 
 /*--------------------------------------------------------------
 # Container
 --------------------------------------------------------------*/
 .container {
-  padding-bottom: 20px;
+  padding-bottom: 30px;
+}
+.containers {
+  padding-bottom: 30px;
 }
 
 /*--------------------------------------------------------------
@@ -113,7 +123,7 @@ body {
 .Games .icon-box {
   padding: 30px 20px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);
-  border-radius: 10px;
+  border-radius: 15px;
   background: rgb(110, 106, 106);
   transition: all ease-in-out 0.3s;
   height: 100%;
@@ -140,6 +150,10 @@ tbody tr:hover {
 .button {
   background: #fff;
   padding: 10px;
+}
+
+.button-padding {
+  padding-top: 20px;
 }
 
 
